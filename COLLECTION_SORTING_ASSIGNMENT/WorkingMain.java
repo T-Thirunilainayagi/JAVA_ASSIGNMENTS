@@ -2,11 +2,16 @@ package collectionandsortingassignment;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class WorkingMain {
+	public static void main(String[] args) {
+		
+	
 	
 	//objects of customer class
 	Customer cust1 = new Customer(1l, "Stefan Walker", 1);
@@ -30,27 +35,27 @@ public class WorkingMain {
 	Product prod7 = new Product(7l, "aspernatur rerum qui", "Books", 656.42);
 	Product prod8 = new Product(8l, "deleniti earum et", "Baby", 41.46);
 	Product prod9 = new Product(9l, "voluptas ut quidem", "Books", 697.57);
-	Product prod10 = new Product(10l, "eos sed debitis", "Baby", 366.90);
-	Product prod11 = new Product(11l, "laudantium sit nihil", "Toys", 95.50);
-	Product prod12 = new Product(12l, "ut perferendis corporis", "Grocery", 302.19);
-	Product prod13 = new Product(13l, "sint voluptatem ut", "Toys", 295.37);
+	Product prod10 =new Product(10l, "eos sed debitis", "Baby", 366.90);
+	Product prod11 =new Product(11l, "laudantium sit nihil", "Toys", 95.50);
+	Product prod12 =new Product(12l, "ut perferendis corporis", "Grocery", 302.19);
+	Product prod13 =new Product(13l, "sint voluptatem ut", "Toys", 295.37);
 	Product prod14= new Product(14l, "quos sunt ipsam", "Grocery", 534.64);
-	Product prod15 = new Product(15l, "qui illo error", "Baby", 623.58);
-	Product prod16 = new Product(16l, "aut ex ducimus", "Books", 551.39);
-	Product prod17 = new Product(17l, "accusamus repellendus minus", "Books", 240.58);
-	Product prod18 = new Product(18l, "aut accusamus quia", "Baby", 881.38);
-	Product prod19 = new Product(19l, "doloremque incidunt sed", "Games", 988.49);
-	Product prod20 = new Product(20l, "libero omnis velit", "Baby", 177.61);
-	Product prod21 = new Product(21l, "consectetur cupiditate sunt", "Toys", 95.46);
-	Product prod22 = new Product(22l, "itaque ea qui", "Baby", 677.78);
-	Product prod23 = new Product(23l, "non et nulla", "Grocery", 70.49);
-	Product prod24 = new Product(24l, "veniam consequatur et", "Books", 893.44);
-	Product prod25 = new Product(25l, "magnam adipisci voluptate", "Grocery", 366.13);
-	Product prod26 = new Product(26l, "reiciendis consequuntur placeat", "Toys", 359.27);
-	Product prod27 = new Product(27l, "dolores ipsum sit", "Toys", 786.99);
-	Product prod28 = new Product(28l, "ut hic tempore", "Toys", 316.09);
-	Product prod29 = new Product(29l, "quas quis deserunt", "Toys", 772.78);
-	Product prod30 = new Product(30l, "excepturi nesciunt accusantium", "Toys", 911.46);
+	Product prod15 =new Product(15l, "qui illo error", "Baby", 623.58);
+	Product prod16 =new Product(16l, "aut ex ducimus", "Books", 551.39);
+	Product prod17 =new Product(17l, "accusamus repellendus minus", "Books", 240.58);
+	Product prod18 =new Product(18l, "aut accusamus quia", "Baby", 881.38);
+	Product prod19 =new Product(19l, "doloremque incidunt sed", "Games", 988.49);
+	Product prod20 =new Product(20l, "libero omnis velit", "Baby", 177.61);
+	Product prod21 =new Product(21l, "consectetur cupiditate sunt", "Toys", 95.46);
+	Product prod22 =new Product(22l, "itaque ea qui", "Baby", 677.78);
+	Product prod23 =new Product(23l, "non et nulla", "Grocery", 70.49);
+	Product prod24 =new Product(24l, "veniam consequatur et", "Books", 893.44);
+	Product prod25 =new Product(25l, "magnam adipisci voluptate", "Grocery", 366.13);
+	Product prod26 =new Product(26l, "reiciendis consequuntur placeat", "Toys", 359.27);
+	Product prod27 =new Product(27l, "dolores ipsum sit", "Toys", 786.99);
+	Product prod28 =new Product(28l, "ut hic tempore", "Toys", 316.09);
+	Product prod29 =new Product(29l, "quas quis deserunt", "Toys", 772.78);
+	Product prod30 =new Product(30l, "excepturi nesciunt accusantium", "Toys", 911.46);
 	
 	//objects of order class
 	Order order1 =new Order(1l, LocalDate.of(2021,2,28), LocalDate.of(2021,3,8), "NEW", 5l);
@@ -104,13 +109,180 @@ public class WorkingMain {
 	Order order49 =new Order(49l, LocalDate.of(2021,4,10), LocalDate.of(2021,4,13), "NEW", 7l);
 	Order order50 =new Order(50l, LocalDate.of(2021,3,18), LocalDate.of(2021,3,21), "NEW", 9l);
 	
-	//creating prodList
-	
-	//Set<Product> prodList = new TreeSet<Product>();
-	//prodList.add(prod1);
-	
+	//creating prodList	
 	List<Product> prodList = new ArrayList<Product>();
-	//prodList.add(prod1);
+	prodList.add(prod1);
+	prodList.add(prod2);
+	prodList.add(prod3);
+	prodList.add(prod4);
+	prodList.add(prod5);
+	prodList.add(prod6);
+	prodList.add(prod7);
+	prodList.add(prod8);
+	prodList.add(prod9);
+	prodList.add(prod11);
+	prodList.add(prod12);
+	prodList.add(prod13);
+	prodList.add(prod14);
+	prodList.add(prod15);
+	prodList.add(prod16);
+	prodList.add(prod17);
+	prodList.add(prod18);
+	prodList.add(prod19);
+	prodList.add(prod20);
+	prodList.add(prod21);
+	prodList.add(prod22);
+	prodList.add(prod23);
+	prodList.add(prod24);
+	prodList.add(prod25);
+	prodList.add(prod26);
+	prodList.add(prod27);
+	prodList.add(prod28);
+	prodList.add(prod29);
+	prodList.add(prod30);
+	
+	//printing product list
+	Iterator prodItr=prodList.iterator();
+	while(prodItr.hasNext()) {
+		System.out.println(prodItr.next());
+	}
+	System.out.println("***********************");
+	
+	//creating orderList	
+	List<Order> orderList = new ArrayList<Order>();
+	orderList.add(order1);
+	orderList.add(order2);
+	orderList.add(order3);
+	orderList.add(order4);
+	orderList.add(order5);
+	orderList.add(order6);
+	orderList.add(order7);
+	orderList.add(order8);
+	orderList.add(order9);
+	orderList.add(order10);
+	orderList.add(order11);
+	orderList.add(order12);
+	orderList.add(order13);
+	orderList.add(order14);
+	orderList.add(order15);
+	orderList.add(order16);
+	orderList.add(order17);
+	orderList.add(order18);
+	orderList.add(order19);
+	orderList.add(order20);
+	orderList.add(order21);
+	orderList.add(order22);
+	orderList.add(order23);
+	orderList.add(order24);
+	orderList.add(order25);
+	orderList.add(order26);
+	orderList.add(order27);
+	orderList.add(order28);
+	orderList.add(order29);
+	orderList.add(order30);
+	orderList.add(order31);
+	orderList.add(order32);
+	orderList.add(order33);
+	orderList.add(order34);
+	orderList.add(order35);
+	orderList.add(order36);
+	orderList.add(order37);
+	orderList.add(order38);
+	orderList.add(order39);
+	orderList.add(order40);
+	orderList.add(order41);
+	orderList.add(order42);
+	orderList.add(order43);
+	orderList.add(order44);
+	orderList.add(order45);
+	orderList.add(order46);
+	orderList.add(order47);
+	orderList.add(order48);
+	orderList.add(order49);
+	orderList.add(order50);
+	
+	//printing order list
+	Iterator orderItr=orderList.iterator();
+	while(orderItr.hasNext()) {
+		System.out.println(orderItr.next());
+	}
+	System.out.println("***********************");
+	
+	//creating customerList	
+	List<Customer> customerList = new ArrayList<Customer>();
+	customerList.add(cust1);
+	customerList.add(cust2);
+	customerList.add(cust3);
+	customerList.add(cust4);
+	customerList.add(cust5);
+	customerList.add(cust6);
+	customerList.add(cust7);
+	customerList.add(cust8);
+	customerList.add(cust9);
+	customerList.add(cust10);
+	
+	//printing customer list
+		Iterator customerItr=customerList.iterator();
+		while(customerItr.hasNext()) {
+			System.out.println(customerItr.next());
+		}
+	
+	System.out.println("***********************");
+	
+	//list of products belongs to category “Books” with price > 100
+	System.out.println("Printing list of products belongs to category “Books” with price > 100");
+	System.out.println();
+	for(Product p: prodList) {
+		if(p.getCategory()=="Books"&& p.getPrice()>100) {
+			System.out.println(p);
+		}
+	}
+	System.out.println("***********************");
+	//Obtain a list of order with products belong to category “Baby”
+//	for(Order o:orderList) {
+//		for(Product p:prodList) {
+//			if(p.getCategory()=="Baby") {
+//				System.out.println(o);
+//			}
+//		}
+//	}
+	System.out.println("***********************");
+	//Obtain a list of product with category = “Toys” and then apply 10% discount
+	System.out.println("a list of product with category as “Toys” and applying 10% discount");
+	System.out.println();
+	for(Product p:prodList) {
+		if(p.getCategory().equalsIgnoreCase("Toys")) {
+			double price=p.getPrice()*0.9;
+			p.setPrice(price);
+			System.out.println(p);
+		}
+	}
+	//Obtain a list of products ordered by customer of tier 2 between 01-Feb-2021 and 01-Apr-2021
+    //yet to do
+	
+	//Get the cheapest products of “Books” category
+	System.out.println("***********************");
+	
+//	for(Product p : prodList) {
+//		if(p.getCategory().equalsIgnoreCase("Books")) {
+//			prodList.sort(Comparator.comparing(Product::getPrice));
+//			//System.out.println(p);
+//			}
+//		}
+	double cheap = 0;
+	
+	for(Product p:prodList) {
+		if(p.getCategory()=="Books") {
+			cheap=p.getPrice();
+		    break;}
+	}
+	
+	for(Product p: prodList) {
+		if(p.getCategory()=="Books"&&p.getPrice()< cheap) {
+			cheap=p.getPrice();
+		}
+	}
+	System.out.println("Lowest price of book is "+cheap);
+	}
+	}
 
-
-}
