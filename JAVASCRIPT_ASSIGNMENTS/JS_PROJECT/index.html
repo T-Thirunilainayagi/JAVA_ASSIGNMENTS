@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project</title>
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+<body>
+    <table align="center" cellspacing="2">   
+      <form id="customer_form"> <h2 align="center">PRESENTING THE USE CASE</h2>
+        <tr>
+          <td><label>Name:</label></td>
+          <td><input type="text" name="uname" id="uname" required/></td>
+          <br/>
+        </tr>
+        <tr>
+          <td> <label>Email Id:</label></td>
+          <td><input type="email" name="email" id="email"/></td>
+          <br/>
+        </tr>
+        <tr>
+          <td><label>Contact No:</label></td>
+          <td><input type="phone" name="cnumber" id="cnumber"/></td>
+          <br/>
+        </tr>
+        <tr>
+          <td><label>Account Type</label></td>
+          <td>
+            <select name="accountType" id="accountType" required>
+              <option value="" disabled="disabled" selected="selected">Please select an option</option>
+              <option >Savings</option>
+              <option >Current Account</option>
+            </select>
+          </td>
+          <br/>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <br>
+                <button typr="submit" onclick="addCustomerData()" id="addcust">Add Customer</button>
+            </td>
+        </tr>
+       </form>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+    <table align="center" border="2" id="customer_data_table">
+      <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Account Type</th>
+        </tr>        
+      </thead>
+      <tbody id="customer_data_table_body">
+      </tbody>
+    </table>
+    
+</body>
+</html>
