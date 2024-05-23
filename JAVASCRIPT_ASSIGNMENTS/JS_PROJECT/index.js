@@ -4,7 +4,7 @@ function addCustomerData(){
     const form = document.getElementById("customer_form");
     const tableBody = document.getElementById("customer_data_table_body");
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
+        //e.preventDefault();
 
         //fetching form data and storing in variables
         const name = document.getElementById("uname").value;
@@ -20,8 +20,7 @@ function addCustomerData(){
         if(name_regex.test(name))
              valid_name=name;
         else
-           alert("Only letters are allowed in Name field")
-
+           document.getElementById("name_error").innerHTML("Please provide valid name")
         //email validation
         const email_regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         let valid_email;

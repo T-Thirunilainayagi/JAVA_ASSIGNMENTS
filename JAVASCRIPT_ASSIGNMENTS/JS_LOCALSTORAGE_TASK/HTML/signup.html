@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Signup</title>
+  <link rel="stylesheet" href="../css/signup.css">
+  <script src="../js/signup.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>User Signup</h2>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name">
+        <small class="text-danger" id="nameError"></small>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter email">
+        <small class="text-danger" id="emailError"></small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <small class="text-danger" id="passwordError"></small>
+      </div>
+      <button type="button" onclick="signup()">Sign Up</button>
+    </form>
+    <div id="successMessage" class="successMessage" style="display: none;">User registered successfully!</div>
+    <div id="signIn">
+      <div>Already Have an Account?     </div>
+      <div><a href="signin.html">Sign In</a></div>
+    </div>
+  </div>
+</body>
+</html
